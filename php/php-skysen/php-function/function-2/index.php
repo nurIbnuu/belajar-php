@@ -27,7 +27,7 @@ function total(int|float $a, int|float $b) {
 // function greet($firstName, $lastName = 'Hubab')
 // greet('Nur'); Nur Hubab
 // default value tidak bisa di parameter pertama
-// jika ada default argument maka parameter = optional, juka tidak ada maka parameter = required(harus diisi)
+// jika ada default argument maka parameter = optional, jika tidak ada maka parameter = required(harus diisi)
 
 // 7. Named Argument (lastName : 'Ibnu', firstName : 'Nur')
 // function greet($firstName, $lastName)
