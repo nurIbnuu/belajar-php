@@ -112,5 +112,50 @@
   }
   echo $enter;
   ?>
+
+  <h2>G</h2>
+  <?php
+  for ($baris = 1; $baris <= UKURAN; $baris++) {
+    for ($kolom = 1; $kolom <= UKURAN; $kolom++) {
+      if (($kolom == 1 && $baris >= 2 && $baris <= 4) || (($baris == 1 || $baris == 5) && ($kolom >= 2 && $kolom <= 5)) || ($kolom == 5 && $baris >= 3) || ($baris == 3 && $kolom == 4)) {
+        echo $tampil;
+      } else {
+        echo $elseTampil;
+      }
+    }
+    echo $enter;
+  }
+  echo $enter;
+  ?>
+
+  <h2>H</h2>
+  <?php
+  for ($baris = 1; $baris <= UKURAN; $baris++) {
+    for ($kolom = 1; $kolom <= UKURAN; $kolom++) {
+      if ($kolom == 1 || $kolom == 5 || $baris == 3) {
+        echo $tampil;
+      } else {
+        echo $elseTampil;
+      }
+    }
+    echo $enter;
+  }
+  echo $enter;
+  ?>
+
+  <h2>I</h2>
+  <?php
+  for ($baris = 1; $baris <= UKURAN; $baris++) {
+    for ($kolom = 1; $kolom <= UKURAN; $kolom++) {
+      if ($kolom == 3) {
+        echo $tampil;
+      } else {
+        echo $elseTampil;
+      }
+    }
+    echo $enter;
+  }
+  echo $enter;
+  ?>
 </body>
 </html>
