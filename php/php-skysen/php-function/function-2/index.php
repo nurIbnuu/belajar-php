@@ -36,6 +36,7 @@ function total(int|float $a, int|float $b) {
 // 8. Typed Declaration (int, string, float)
 // function total(int $a, int $b)
 // total(1, '2'); 3
+
 // function greet(string $firstName, string $lastName)
 // greet(1, "ibnu"); 1 ibnu
 

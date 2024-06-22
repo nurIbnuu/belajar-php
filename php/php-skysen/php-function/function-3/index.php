@@ -16,7 +16,7 @@ function total(int|float $a, int $b) : int|float {
   return $a + $b;
 }
 // 5. hasil dari pengembalian function biasa ditampung dalam variable
-$result = total('1.8', 2); // 7. "string" '1.8' dikonversi ke dalam bentuk "integer"
+$result = total('1.8', 2); // 7. "string" '1.8' dikonversi ke dalam bentuk"float"
 // var_dump(total('a', 'b')); // 8. "string" 'a', 'b' dikonversi ke dalam bentuk "integer", jika tidak bisa maka akan keluar pesan error
 var_dump($result);
 

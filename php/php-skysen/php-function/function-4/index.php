@@ -7,14 +7,14 @@
 
 
 //    1. global
-// Variabel yang dibuat diluar function. Hanya bisa diakses dari luar function, secara default tidak bisa diakses di dalam function. Apabila hendak mengakses dari dalam function maka bisa menggunakan kata kunci 'global' atau menggunakan variable khusus $GLOBALS. Contoh:
+// Variabel yang dibuat di luar function. Hanya bisa diakses dari luar function, secara default tidak bisa diakses di dalam function. Apabila hendak mengakses dari dalam function maka bisa menggunakan kata kunci 'global' atau menggunakan variable khusus $GLOBALS. Contoh:
 
 // $name = 'Nur';
 // function hello() {
 //  global $name; ATAU 
 //  echo $GLOBALS['name'] . PHP_EOL;
 // }
-// hello();
+// hello(); Nur
 
 
 
@@ -25,13 +25,13 @@
 //   $name = 'Nur';
 //   echo $name . PHP_EOL; // Bisa
 // }
-// hello();
+// hello(); Nur
 // echo $name . PHP_EOL; // Error
 
 // function test() {
 //   echo $name . PHP_EOL; // Error
 // }
-// test();
+// test(); // Error
 
 
 

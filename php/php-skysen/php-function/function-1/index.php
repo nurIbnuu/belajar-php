@@ -1,5 +1,5 @@
 <?php
-                                // Pengenalan Function – Tutorial PHP Function #01
+// Pengenalan Function – Tutorial PHP Function #01
 
 
   // Apa itu Function()
@@ -29,10 +29,12 @@
 
 // function bisa dipanggil sebelum dibuat
 greet();
+
 // membuat function
 function greet() {
   echo 'Hello' . PHP_EOL;
 };
+
 // memanggil function, case insensitive
 GREET();
 
