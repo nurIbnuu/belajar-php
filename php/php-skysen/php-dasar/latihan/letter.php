@@ -262,5 +262,20 @@
   }
   echo $enter;
   ?>
+
+  <h2>Q</h2>
+  <?php
+  for ($baris = 1; $baris <= UKURAN; $baris++) {
+    for ($kolom = 1; $kolom <= UKURAN; $kolom++) {
+      if (($baris == 1 && $kolom >= 2 && $kolom <= 4) || ($kolom == 1 && $baris >= 2 && $baris <= 3) || ($kolom == 5 && $baris >= 2 && $baris <= 3) || ($baris == 4 && $kolom >= 2 && $kolom <= 4) || ($baris == 5 && $kolom == 5) || ($baris == 3 && $kolom == 3)) {
+        echo $tampil;
+      } else {
+        echo $elseTampil;
+      }
+    }
+    echo $enter;
+  }
+  echo $enter;
+  ?>
 </body>
 </html>
