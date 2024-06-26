@@ -277,5 +277,20 @@
   }
   echo $enter;
   ?>
+
+  <h2>R</h2>
+  <?php
+  for ($baris = 1; $baris <= UKURAN; $baris++) {
+    for ($kolom = 1; $kolom <= UKURAN; $kolom++) {
+      if ($kolom == 1 || ($baris & 1 == 1 && $baris != 5 && $kolom <= 4) || ($baris == 2 && $kolom == 5) || ($baris == $kolom && $baris + $kolom != 4)){
+        echo $tampil;
+      } else {
+        echo $elseTampil;
+      }
+    }
+    echo $enter;
+  }
+  echo $enter;
+  ?>
 </body>
 </html>
