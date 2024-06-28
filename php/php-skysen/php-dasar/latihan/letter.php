@@ -307,5 +307,20 @@
   }
   echo $enter;
   ?>
+
+  <h2>T</h2>
+  <?php
+  for ($baris = 1; $baris <= UKURAN; $baris++) {
+    for ($kolom = 1; $kolom <= UKURAN; $kolom++) {
+      if ($baris == 1 || $kolom == 3){
+        echo $tampil;
+      } else {
+        echo $elseTampil;
+      }
+    }
+    echo $enter;
+  }
+  echo $enter;
+  ?>
 </body>
 </html>
