@@ -322,5 +322,20 @@
   }
   echo $enter;
   ?>
+
+  <h2>U</h2>
+  <?php
+  for ($baris = 1; $baris <= UKURAN; $baris++) {
+    for ($kolom = 1; $kolom <= UKURAN; $kolom++) {
+      if (($kolom == 1 || $kolom == 5) && $baris <= 4 || ($baris == 5 && $kolom >= 2 && $kolom <= 4)){
+        echo $tampil;
+      } else {
+        echo $elseTampil;
+      }
+    }
+    echo $enter;
+  }
+  echo $enter;
+  ?>
 </body>
 </html>
