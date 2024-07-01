@@ -337,5 +337,20 @@
   }
   echo $enter;
   ?>
+
+  <h2>V</h2>
+  <?php
+  for ($baris = 1; $baris <= UKURAN; $baris++) {
+    for ($kolom = 1; $kolom <= UKURAN; $kolom++) {
+      if (($kolom == 1 || $kolom == 5) && $baris <= 2 || ($baris - $kolom == 2) || $baris + $kolom == 8){
+        echo $tampil;
+      } else {
+        echo $elseTampil;
+      }
+    }
+    echo $enter;
+  }
+  echo $enter;
+  ?>
 </body>
 </html>
