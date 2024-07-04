@@ -369,3 +369,50 @@
   ?>
 </body>
 </html>
+
+  <h2>X</h2>
+  <?php
+  for ($baris = 1; $baris <= UKURAN; $baris++) {
+    for ($kolom = 1; $kolom <= UKURAN; $kolom++) {
+      if ($baris == $kolom || $baris + $kolom == 6){
+        echo $tampil;
+      } else {
+        echo $elseTampil;
+      }
+    }
+    echo $enter;
+  }
+  echo $enter;
+  ?>
+
+  <h2>Y</h2>
+  <?php
+  for ($baris = 1; $baris <= UKURAN; $baris++) {
+    for ($kolom = 1; $kolom <= UKURAN; $kolom++) {
+      if (($baris == $kolom && $baris + $kolom <= 6) ||( $baris + $kolom == 6 && $baris <= 3) || ($baris >= 4 && $kolom == 3)){
+        echo $tampil;
+      } else {
+        echo $elseTampil;
+      }
+    }
+    echo $enter;
+  }
+  echo $enter;
+  ?>
+
+  <h2>Z</h2>
+  <?php
+  for ($baris = 1; $baris <= UKURAN; $baris++) {
+    for ($kolom = 1; $kolom <= UKURAN; $kolom++) {
+      if ($baris == 1 || $baris == 5 || $baris + $kolom == 6){
+        echo $tampil;
+      } else {
+        echo $elseTampil;
+      }
+    }
+    echo $enter;
+  }
+  echo $enter;
+  ?>
+</body>
+</html>
